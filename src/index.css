@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'IBM';
+    src: url(/src/font/IBMPlexSansThai-Medium.ttf);
+}
+body{
+    font-family: "IBM", sans-serif;
+}

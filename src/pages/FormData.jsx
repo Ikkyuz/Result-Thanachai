@@ -20,32 +20,34 @@ const FormData = () => {
   };
 
   return (
-    <>
-      <h1>แบบฟอร์มภาษี</h1>
-      <form onSubmit={submitForm}>
+    <div className="bg-gradient-to-br from-purple-200 to-purple-800 p-6 rounded-lg shadow-lg mx-auto">
+      <h1 className="text-center text-4xl font-bold my-5">แบบฟอร์มภาษี</h1>
+      <form onSubmit={submitForm} className="text-lg">
         <p>
           <label>เงินเดือน: </label>
-          <input type="text" name="salary" id="salary" onChange={handlaChange} />
+          <input type="text" name="salary" id="salary" onChange={handlaChange} className="w-full pl-1 border rounded-md"/>
         </p>
-        <p>
+        <p className="mt-1">
           <label>โบนัส: </label>
-          <input type="text" name="bonus" id="bonus" onChange={handlaChange} />
+          <input type="text" name="bonus" id="bonus" onChange={handlaChange} className="w-full pl-1 border rounded-md"/>
         </p>
-        <p>
+        <p className="mt-1">
           <label>ประกันสังคมต่อเดือน: </label>
-          <input type="text" name="ssecurity" id="ssecurity" onChange={handlaChange} />
+          <input type="text" name="ssecurity" id="ssecurity" onChange={handlaChange} className="w-full pl-1 border rounded-md"/>
         </p>
-        <p>
+        <p className="mt-1">
           <label>จำนวนบุตร: </label>
-          <input type="text" name="child" id="child" onChange={handlaChange} />
+          <input type="text" name="child" id="child" onChange={handlaChange} className="w-full pl-1 border rounded-md"/>
         </p>
-        <p>
+        <p className="mt-1">
           <label>ค่าเบี้ยประกันชีวิตต่อปี: </label>
-          <input type="text" name="slife" id="slife" onChange={handlaChange} />
+          <input type="text" name="slife" id="slife" onChange={handlaChange} className="w-full pl-1 border rounded-md"/>
         </p>
-        <button type="submit">Submit</button>
+        <div className="flex justify-end mt-3">
+          <button type="submit" className="bg-gray-100 text-purple-800 hover:bg-gradient-to-br from-purple-300 to-purple-500 hover:text-gray-100 font-bold rounded-lg shadow-lg p-1 px-2">Submit</button>
+        </div>
       </form>
-    </>
+    </div>
   );
 };
 
